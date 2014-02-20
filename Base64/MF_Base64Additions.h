@@ -23,5 +23,10 @@
 
 @interface MF_Base64Codec : NSObject 
 +(NSData *)dataFromBase64String:(NSString *)base64String;
+
++ (NSString *)webSafeBase64StringFromData:(NSData *)data;
+
++ (NSData *)dataFromWebSafeBase64String:(NSString *)encoding;
+
 +(NSString *)base64StringFromData:(NSData *)data;
 @end
